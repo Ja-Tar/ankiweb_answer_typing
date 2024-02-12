@@ -14,7 +14,7 @@ function compareTexts(expected, provided) {
             let backgroundType;
             switch (token.kind) {
                 case 'Good':
-                    backgroundType = 'limegreen';
+                    backgroundType = 'green';
                     break;
                 case 'Bad':
                     backgroundType = 'crimson';
