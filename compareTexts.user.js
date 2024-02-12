@@ -69,9 +69,9 @@ function compareTexts(expected, provided) {
         let renderedExpected = renderTokens(tokens.expected);
 
         if (this.provided === this.expected) {
-            return `<div>${renderedProvided}</div>`;
+            return renderedProvided;
         } else {
-            return `<div>${renderedProvided}<br><span id="typearrow">&darr;</span><br>${renderedExpected}</div>`;
+            return `${renderedProvided}<br><span id="typearrow">&darr;</span><br>${renderedExpected}`;
         }
     };
 
