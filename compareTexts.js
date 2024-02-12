@@ -1,12 +1,4 @@
-// ==UserScript==
-// @name        OK
-// @namespace   OK
-// @match       https://www.test.com/*
 // @require     https://rawcdn.githack.com/google/diff-match-patch/62f2e689f498f9c92dbc588c58750addec9b1654/javascript/diff_match_patch.js
-// @grant       none
-// @version     0.1
-// @author      JaTar
-// ==/UserScript==
 
 function compareTexts(expected, provided) {
     function renderTokens(tokens) {
