@@ -2,11 +2,10 @@
 // @name        AnkiWeb - AnswerTyping
 // @namespace   JaTar Scripts
 // @match       https://ankiuser.net/study
-// @require     https://cdn.jsdelivr.net/npm/diff@5.2.0/dist/diff.min.js
-// @updateURL   https://raw.githubusercontent.com/JaTar/ankiweb_answer_typing/main/AnkiWeb-AnswerTyping.user.js
-// @downloadURL https://raw.githubusercontent.com/JaTar/ankiweb_answer_typing/main/AnkiWeb-AnswerTyping.user.js
+// @require     https://rawcdn.githack.com/google/diff-match-patch/62f2e689f498f9c92dbc588c58750addec9b1654/javascript/diff_match_patch.js
+// @require     https://rawcdn.githack.com/Ja-Tar/ankiweb_answer_typing/9852a2fb00376c62f0a195c36590d6b1af4cc082/compareTexts.js
 // @grant       none
-// @version     1.0.0
+// @version     0.2.0
 // @author      JaTar
 // ==/UserScript==
 
@@ -50,10 +49,8 @@ function sprawdzOdpowiedz(userAnswer) {
     }
 
     if (answerAttribute && hrElement) {
-        const diffs = diff(answerAttribute, userAnswer);
-        const diffOutput = renderDiffToHTML(diffs);
         const resultDiv = document.createElement('div');
-        resultDiv.innerHTML = diffOutput;
+        resultDiv.innerHTML = compareTexts(answerAttribute, userAnswer);
         try {
             resultDiv.id = 'result';
             qaDiv.insertBefore(resultDiv, document.querySelector('br'));
