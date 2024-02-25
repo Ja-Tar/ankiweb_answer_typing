@@ -4,8 +4,10 @@
 // @match       https://ankiuser.net/study
 // @require     https://rawcdn.githack.com/google/diff-match-patch/62f2e689f498f9c92dbc588c58750addec9b1654/javascript/diff_match_patch.js
 // @require     https://rawcdn.githack.com/Ja-Tar/ankiweb_answer_typing/9852a2fb00376c62f0a195c36590d6b1af4cc082/compareTexts.js
+// @updateURL   https://raw.githubusercontent.com/JaTar/ankiweb_answer_typing/main/AnkiWeb-AnswerTyping.user.js
+// @downloadURL https://raw.githubusercontent.com/JaTar/ankiweb_answer_typing/main/AnkiWeb-AnswerTyping.user.js
 // @grant       none
-// @version     1.0.1
+// @version     1.0.2
 // @author      JaTar
 // ==/UserScript==
 
